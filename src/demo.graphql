@@ -1,3 +1,30 @@
 type Query {
-    hello: String!
+  hello: String!
+}
+
+type Consultant {
+  id: ID!
+  name: String!
+  email: String!
+  phone: String!
+  address: String!
+  city: String!
+  state: String!
+  zip: String!
+  country: String!
+  status: String!
+  created_at: String!
+  updated_at: String!
+}
+
+type Engagement {
+  id: ID!
+  name: String!
+  description: String!
+  start_date: String!
+  end_date: String!
+  status: String!
+  created_at: String!
+  updated_at: String!
+  consultant: [Consultant]!
 }
